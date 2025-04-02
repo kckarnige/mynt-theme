@@ -16,6 +16,8 @@
     --home-icon: var(--legacyMobile) !important; /* --default, --classic, --legacyMobile */
     
     --accentcolor: 111, 219, 129 !important; /* Default 111, 219, 129: */
+    --mod-saturation-factor: 0.7; /* Default is .7 */
+    --mod-hue-factor: 130; /* Default hue is 130 */
 
 	--settingsmodalbackground: transparent;
 	--settingsmodalwidth: 960px;
