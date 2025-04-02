@@ -4,7 +4,7 @@
  * @authorId 634168893644210186
  * @website https://github.com/kckarnige/mynt-theme
  * @authorLink https://github.com/kckarnige
- * @version 1.2.0
+ * @version 1.3.0
  * @description A theme so clean, it makes your pearly whites look filthy in comparison.
  * @donate https://ko-fi.com/kckarnige
  * @updateUrl https://raw.githubusercontent.com/kckarnige/mynt-theme/main/mynt.theme.css
@@ -13,30 +13,18 @@
 @import url("https://raw.githubusercontent.com/kckarnige/mynt-theme/refs/heads/main/src/helpbgone.css");
 
 :root {
-    --home-icon: var(--mobile); /* --default, --classic, --mobile */
-    --mod-saturation-factor: 0.7; /* Default is .7 */
-    --mod-hue-factor: 130; /* Default hue is 130 */
+    --home-icon: var(--legacyMobile) !important; /* --default, --classic, --legacyMobile */
+    
+    --accentcolor: 111, 219, 129 !important; /* Default 111, 219, 129: */
 
 	--settingsmodalbackground: transparent;
 	--settingsmodalwidth: 960px;
 	--settingsmodalheight: 80vh;
 }
 
-nav[class*="guilds_"]>ul[class*="tree_"]>div[class*="itemsContainer_"]>div[class*="none_"]::-webkit-scrollbar-thumb {
-    background: var(--scrollbar-thin-thumb) !important;
-}
-
-[class*="anchor_"][class*="links_"],
-[class*="anchor_"][class*="links_"] svg {
-    color: var(--brand-500);
-    text-decoration: none;
-    transition: color 0.3s;
-    opacity: 1;
-}
-[class*="anchor_"][class*="links_"]:hover,
-[class*="anchor_"][class*="links_"]:hover svg {
-    color: var(--brand-360);
-    text-decoration: none;
-    transition: color 0.3s;
-    opacity: 1;
+* {
+    /* Font */
+    --font-display: 'DM Sans', sans-serif !important;
+    --font-primary: 'DM Sans', sans-serif !important;
+    --font-headline: 'DM Sans', sans-serif !important;
 }

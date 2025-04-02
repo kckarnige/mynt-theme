@@ -1,3 +1,18 @@
-[class*="upperContainer_"] [class*="toolbar_"] [class*="anchor_"][class*="anchorUnderlineOnHover_"][href="https://support.discord.com"] {
+[class*=anchor_][class*=anchorUnderlineOnHover_][href="https://support.discord.com"][target=_blank]:has([class*=button_]) {
     display: none;
+}
+
+
+/* No Titlebar Compat */
+
+.platform-win:not(:has([legcord-platform])) [class*=appMount_] [class*=chatLayerWrapper_] [class*=children_] [class*=titleWrapper_],
+.platform-linux:not(:has([legcord-platform])) [class*=appMount_] [class*=chatLayerWrapper_] [class*=children_] [class*=titleWrapper_],
+.platform-win:not(:has([legcord-platform])) [class*=appMount_] [class*=container_] > [class*=base_] :not([class*=chatLayerWrapper_]) [class*=upperContainer_] > [class*=toolbar_],
+.platform-linux:not(:has([legcord-platform])) [class*=appMount_] [class*=container_] > [class*=base_] :not([class*=chatLayerWrapper_]) [class*=upperContainer_] > [class*=toolbar_] {
+  padding-right: 186px !important;
+}
+
+.platform-win:not(:has([legcord-platform])) [class*=appMount_] [class*=chatLayerWrapper_] [class*=children_]:after,
+.platform-linux:not(:has([legcord-platform])) [class*=appMount_] [class*=chatLayerWrapper_] [class*=children_]:after {
+  margin-right: 186px !important;
 }
