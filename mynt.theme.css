@@ -4,13 +4,15 @@
  * @authorId 634168893644210186
  * @website https://github.com/kckarnige/mynt-theme
  * @authorLink https://github.com/kckarnige
- * @version 1.3.0
+ * @version 1.3.1
  * @description A theme so clean, it makes your pearly whites look filthy in comparison.
  * @donate https://ko-fi.com/kckarnige
  * @updateUrl https://raw.githubusercontent.com/kckarnige/mynt-theme/main/mynt.theme.css
 */
-@import url("https://raw.githubusercontent.com/kckarnige/mynt-theme/refs/heads/main/src/source.css");
+@import url("https://kckarnige.github.io/notitlebar-theme/src/classicTitlebar.min.css");
+@import url("https://kckarnige.github.io/server-scroll/src/serverListScrollbar.min.css");
 @import url("https://raw.githubusercontent.com/kckarnige/mynt-theme/refs/heads/main/src/helpbgone.css");
+@import url("https://raw.githubusercontent.com/kckarnige/mynt-theme/refs/heads/main/src/source.css");
 
 :root {
     --home-icon: var(--legacyMobile) !important; /* --default, --classic, --legacyMobile */
