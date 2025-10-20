@@ -11,8 +11,8 @@
 */
 @import url("https://raw.githubusercontent.com/kckarnige/mynt-theme/refs/heads/main/src/helpbgone.css");
 @import url("https://raw.githubusercontent.com/kckarnige/mynt-theme/refs/heads/main/src/source.css");
-@import url("https://kckarnige.github.io/notitlebar-theme/src/classicTitlebar.min.css");
-@import url("https://kckarnige.github.io/server-scroll/src/serverListScrollbar.min.css");
+@import url("https://raw.githubusercontent.com/kckarnige/notitlebar-theme/refs/heads/main/src/classicTitlebar.min.css");
+@import url("https://raw.githubusercontent.com/kckarnige/server-scroll/refs/heads/main/src/serverListScrollbar.min.css");
 
 :root {
     --home-icon: var(--legacyMobile) !important; /* --default, --classic, --legacyMobile */
