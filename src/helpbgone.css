@@ -4,4 +4,13 @@
 
 /* No Titlebar Compat */
 
-/* Fixing this */
+.platform-linux,
+.platform-web {
+  --ntb-winButtonWidth: 32px;
+  --ntb-winButtonHeight: 50px;
+  --ntb-win32-space: -48px;
+}
+
+.platform-win:not(:has([legcord-platform])) [class*=appMount_] [class*=container_] > [class*=base_] :not([class*=chatLayerWrapper_]) [class*=container_] > [class*=upperContainer_] > [class*=toolbar_] {
+  padding-right: calc(var(--ntb-win32-space) + var(--space-16) + (var(--space-6) + 2px + var(--space-32)) * var(--btn-count) - 1) !important;
+}
