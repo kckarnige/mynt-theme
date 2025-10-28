@@ -4,8 +4,4 @@
 
 /* No Titlebar Compat */
 
-.platform-win:not(:has([legcord-platform])) [class*=appMount_] [class*=container_] > [class*=base_] :not([class*=chatLayerWrapper_]) [class*=container_] > [class*=upperContainer_] > [class*=toolbar_],
-.platform-linux:not(:has([legcord-platform])) [class*=appMount_] [class*=container_] > [class*=base_] :not([class*=chatLayerWrapper_]) [class*=container_] > [class*=upperContainer_] > [class*=toolbar_],
-.platform-web:not(:has([legcord-platform])) [class*=appMount_] [class*=container_] > [class*=base_] :not([class*=chatLayerWrapper_]) [class*=container_] > [class*=upperContainer_] > [class*=toolbar_] {
-  padding-right: calc(var(--ntb-win32-space) + var(--space-16) + (var(--space-6) + 2px + var(--space-32)) * var(--btn-count) - 1) !important;
-}
+/* Fixing this */
