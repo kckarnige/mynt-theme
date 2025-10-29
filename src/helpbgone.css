@@ -6,9 +6,7 @@
 
 .platform-linux,
 .platform-web {
-  --ntb-winButtonWidth: 32px;
-  --ntb-winButtonHeight: 50px;
-  --ntb-win32-space: -48px;
+  --ntb-win32-space: -48px !important;
 }
 
 .platform-win:not(:has([legcord-platform])) [class*=appMount_] [class*=container_] > [class*=base_] :not([class*=chatLayerWrapper_]) [class*=container_] > [class*=upperContainer_] > [class*=toolbar_] {
